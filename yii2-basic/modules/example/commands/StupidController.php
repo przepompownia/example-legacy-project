@@ -2,6 +2,7 @@
 
 namespace app\modules\example\commands;
 
+use app\modules\example\models\Trash;
 use yii\console\Controller;
 use yii\console\ExitCode;
 
@@ -18,6 +19,9 @@ class StupidController extends Controller
      */
     public function actionFoo()
     {
+        $trash = new Trash();
+        // $trash->
+
         $this->stdout(sprintf("%s\n", 'X'));
 
         return ExitCode::OK;
