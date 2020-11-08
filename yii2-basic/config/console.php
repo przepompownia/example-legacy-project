@@ -1,5 +1,7 @@
 <?php
 
+use app\modules\example\Module;
+
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
@@ -28,6 +30,12 @@ $config = [
         'db' => $db,
     ],
     'params' => $params,
+    'modules' => [
+        'example' =>           [
+            'class' => Module::class,
+            'controllerNamespace' => 'app\modules\example\commands',
+        ],
+    ],
     /*
     'controllerMap' => [
         'fixture' => [ // Fixture generation command line.
