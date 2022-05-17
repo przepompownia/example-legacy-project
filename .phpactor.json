@@ -1,0 +1,6 @@
+{
+  "$schema": "/home/arctgx/.vim/pack/bundle/opt/phpactor/phpactor.schema.json",
+  "composer.autoloader_path": [
+    "yii2-basic/vendor/autoload.php"
+  ]
+}
