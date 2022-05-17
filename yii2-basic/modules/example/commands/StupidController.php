@@ -20,6 +20,7 @@ class StupidController extends Controller
     public function actionFoo()
     {
         $trash = new Trash();
+        // Complete after remove comment
         // $trash->
 
         $this->stdout(sprintf("%s\n", 'X'));
